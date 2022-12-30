@@ -13,7 +13,15 @@ printf("\n\t\t\t  **-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**\n");
     printf("\n\t\t\t        =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=");
     printf("\n\t\t\t  **-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**-**\n");
 }
-
+void movie_details()
+{
+printf("\n\n\n\t\t\tAvailable Movies:");
+    printf("\n\t\t\t\t1.Frozen//Prize-300//language-English");
+    printf("\n\t\t\t\t2.The Avengers//Prize-400//language-English");
+    printf("\n\t\t\t\t3.Onward//Prize-200//language-English");
+    printf("\n\t\t\t\t4.Aquaman//Prize-100//language-English");
+    printf("\n\t\t\t\t5.Cruella//Prize-500//language-English");
+}
 void moviecho()
 {
     int a;
