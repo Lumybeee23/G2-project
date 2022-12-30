@@ -240,67 +240,7 @@ void buytic()
 
 }
 
-void main()
-{
 
-   int a=0,i=0;
-    char uname[10],c=' ';
-    char pword[10],code[10];
-    char user[10]="username";
-    char pass[10]="password";
-
-    do
-{
-
-        printf("\n\t\t\t*************************************************** ");
-        printf("\n\t\t\t***************** LOGIN FIRST ********************* ");
-        printf("\n\t\t\t*************************************************** ");
-        printf("\n\nENTER USERNAME:- ");
-        scanf("%s",&uname);
-        printf("ENTER PASSWORD:- ");
-        while(i<10)
-        {
-            pword[i]=getch();
-            c=pword[i];
-            if(c==13)
-                break;
-            else
-                printf("*");
-            i++;
-        }
-
-
-
-
-
-
-   pword[i]='\0';
- //char code=pword;
-   i=0;
- //scanf("%s",&pword);
-   if(strcmp(uname,"username")==0 && strcmp(pword,"password")==0)
-   {
-       printf("\n\t\t\t*****************  LOGIN IS SUCCESSFUL  ********************");
-       printf("\n\t\t\t************** WELCOME TO OUR BOOKING SYSTEM   *************");
-       printf("\n\t\t\t\t                           Press any key to continue ....");
-       getch();//Holds the screen
-       break;
-   }
-   else
-   {
-     printf("\n                                     LOGIN IS  UNSUCCESSFUL \n Try again !!!\n");
-     a++;
-     getch();//holds the screen
-   }
-}
-
-   while(a<=2);
-   if(a>2)
-   {
-     printf("\n Sorry you have entered the wrong username and password for three times !!!");
-     getch();
-     exit(0);
-   }
     wlcmmsg();
     movie_details();
 
