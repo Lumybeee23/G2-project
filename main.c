@@ -147,7 +147,56 @@ void seats()
            }
 
 }
+void buytic()
+{
+    char n[20];
+    int mobile;
+    int ticket,amount,num,movie_n,time,cost;
+    printf("\n Fill Details ******");
+              printf("\n Your name: ");
+              scanf("%s",n);
+              printf("\n Mobile number: ");
+              scanf("%d",&mobile);
+              printf("\nYou have bought tickets: ");
+              scanf("%d",&ticket);
+              printf("\nEnter the serial number of movie(1 to 5): ");
+              scanf("%d",&num);
+              switch(num)
+              {
+              case 1:
+                amount=300*ticket;
+                printf("Your bill is %d",amount);
+                break;
+              case 2:
+                amount=400*ticket;
+                printf("Your bill is %d",amount);
+                break;
+               case 3:
+                amount=200*ticket;
+                printf("Your bill is %d",amount);
+                break;
+               case 4:
+                amount=100*ticket;
+                printf("Your bill is %d",amount);
+                break;
+              case 5:
+                amount=500*ticket;
+                printf("Your bill is %d",amount);
+                break;
+              default:
+                printf("Invalid");
+              }
+    printf("\t\t\t\t          PAYMENT                          \n");
+  printf("\t\t\t\t\t*****************SHONALI BANK********************\n");
+  printf("\n Merchant Number : 01234567890\n");
+  printf("\nYour Number:%d\n",mobile);
+  printf("\n Total Amount:%d TK\n",amount);
+  printf("\n\n\n\t\t\t\t**************Booking Confirmed********** \n");
+  printf("\n\n\n\t\t\t\t**************ENJOY YOUR MOVIE********** \n");
 
+
+}
+  void cancel()
 {
     int n;
     printf("Enter the serial no you have choosen for watching movie: ");
